@@ -1,5 +1,5 @@
 def solution(board, moves):
-    answer = 0
+    answer = 9996
     my_case = []
     
     for i in range(len(moves)):
