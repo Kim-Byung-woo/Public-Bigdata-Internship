@@ -12,7 +12,10 @@ import numpy as np
 클래스 레이블명은 TARGET이며 1이면 불만, 0이면 만족한 고객
 '''
 # 데이터 로드
-df_data = pd.read_csv('dataframe.csv', index_col=None)
+import os
+os.getcwd()
+
+df_data = pd.read_csv('c:\\Users\\User\\Documents\\Python Scripts\\Public-Bigdata-Internship\\data\\dataframe.csv', index_col=None)
 df_data = df_data.iloc[: , 1:]
 
 # 피처/레이블 분리
@@ -107,4 +110,5 @@ import matplotlib.pyplot as plt
 fig, ax = plt.subplots(figsize = (10, 12))
 from lightgbm import plot_importance
 plot_importance(estimator, ax = ax)
+
 
